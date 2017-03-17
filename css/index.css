@@ -1,0 +1,90 @@
+/* header部分开始 */
+
+header {
+    padding: 0.3rem 0.2rem;
+}
+
+.city>a {
+    display: inline-block;
+    font-size: 0.4rem;
+    line-height: 0.6rem;
+    padding-right: 0.6rem;
+    background: url('../images/arrow_down.svg') center right no-repeat;
+    background-size: 0.6rem;
+}
+
+.search {
+    background-color: #fff;
+}
+
+.search>.search_text {
+    background: #f5f5f5;
+    height: 0.8rem;
+    width: 60%;
+    border-radius: 0.3rem;
+    font-size: 0.3rem;
+    color: #ccc;
+    padding-left: 0.1rem;
+}
+
+.search .search_btn {
+    height: 0.8rem;
+    background: #ff841d;
+    width: 15%;
+    border-radius: 0.3rem;
+    font-size: 0.30rem;
+    color: #f5f5f5;
+}
+.location{
+    background: url('../images/location.svg') center center no-repeat; 
+    background-size: 0.6rem;
+    padding: 0.4rem;
+    margin-left: 0.1rem;
+}
+
+/* header部分结束 */
+
+
+/* article部分开始 */
+
+.title {
+    font-size: 0.35rem;
+    line-height: 0.7rem;
+    padding-left: 0.2rem;
+}
+
+.hot_showing {
+    padding: 0 0.2rem;
+    background: #f5f5f5;
+}
+
+.hot_showing>li {
+    width: 49%;
+    margin: 0.2rem 0;
+    background: #fff;
+}
+
+.hot_showing>li:nth-child(odd) {
+    float: left;
+}
+
+.hot_showing>li:nth-child(even) {
+    float: right;
+}
+
+.hot_showing>li>a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+
+}
+
+.movie_pic{
+    display: inline-block;
+    width: 4rem;
+    height:5rem;
+}
+.movie_title{
+    font-size: 0.35rem;
+}
+/* article部分结束 */

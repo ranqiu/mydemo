@@ -1,0 +1,16 @@
+.location {
+    background: #f5f5f5;
+}
+.location>li{
+    padding: 0.2rem;
+    border-bottom: 1px solid #ccc;
+}
+.city {
+    font-size: 0.45rem !important;
+    line-height: 0.9rem !important;
+}
+
+.location>li>p {
+    font-size: 0.4rem;
+    line-height: 0.6rem;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/keyword.css">
+</head>
+
+<body>
+<header>
+    <div class="title clearfix">
+        <a href="index.html" class="fl"></a>
+        <p>相关电影</p>
+    </div>
+</header>
+<article>
+    <ul class="movies_infor" id="moviesInfor">
+        <li class="clearfix">
+            <div class="poster fl"><img src="" alt=""></div>
+            <div class="infor">
+                <p class="title">我是title</p>
+                <p class="rating">评分：</p>
+                <p class="directors">导演：</p>
+                <p class="writers">编剧：</p>
+                <p class="actors">主演：</p>
+                <p class="language">语言：</p>
+                <p class="genres">类型：</p>
+                <p class="runtime">时长：</p>
+                <p class="plot_simple">简介：</p>
+            </div>
+        </li>
+    </ul>
+</article>
+
+</body>
+<script src="lib/fixScreen.js"></script>
+<script src="lib/jquery/jquery.js"></script>
+<script src="js/keyword.js"></script>
+<script src="lib/template.js"></script>
+<script type='text/html' id="movies_infor">
+{{each result as value}}
+<li class="clearfix">
+    <div class="poster fl"><img src="{{#value.poster}}" alt=""></div>
+    <div class="infor">
+        <p class="title">{{value.title}}</p>
+        <p class="rating">评分：{{value.rating}}</p>
+        <p class="directors">导演：{{value.directors}}</p>
+        <p class="writers">编剧：{{value.writers}}</p>
+        <p class="actors">主演：{{value.actors}}</p>
+        <p class="language">语言：{{value.language}}</p>
+        <p class="genres">类型：{{value.genres}}</p>
+        <p class="runtime">时长：{{value.runtime}}</p>
+        <p class="plot_simple">简介：{{value.plot_simple}}</p>
+    </div>
+</li>
+{{/each}}
+</script>
+</html>

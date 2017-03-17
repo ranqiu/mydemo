@@ -1,0 +1,84 @@
+.cinema_info {
+    padding: 0.1rem 0.2rem;
+}
+
+.cinema_info>a {
+    display: inline-block;
+    width: 100%;
+}
+
+.cinema_name {
+    font-size: 0.5rem;
+    font-weight: 700;
+    line-height: 0.7rem;
+}
+
+.cinema_address {
+    font-size: 0.4rem;
+    line-height: 0.6rem;
+}
+
+.cineme_tele {
+    padding-left: 0.5rem;
+    font-size: 0.4rem;
+    line-height: 0.8rem;
+    background: url('../images/phone-call.svg') center left no-repeat;
+    background-size: 0.4rem;
+}
+
+.poster_info {
+    overflow: hidden;
+}
+
+.movie_img {
+    width: 1000%;
+    background: #f5f5f5;
+    padding-top: 0.3rem;
+}
+
+.movie_img>.poster_pic {
+    float: left;
+    padding: 0 0.1rem;
+    width: 2%;
+    height: 3.1rem;
+}
+
+.movie_img>.poster_pic>img {
+    width: 100%;
+
+}
+
+.poster_name {
+    text-align: center;
+    font-size: 0.25rem;
+    line-height: 0.30rem;
+    color:#black;
+    font-weight: 700;
+}
+.current{
+	background: #ccc;
+}
+.movie_hall>li{
+	font-size: 0.35rem;
+	border-bottom: 1px solid #ccc;
+	background: #f5f5f5;
+	line-height: 0.7rem;
+	padding:0.2rem;
+}
+.time{
+	margin-right:5%; 
+}
+.type{
+	margin-right:5%; 
+}
+.price{
+	color:red;
+	font-weight: 700;
+}
+.ticket_url{
+	margin-left: 5%;
+	background: orange;
+	padding:0 0.1rem;
+	border-radius: 0.2rem;
+}
+

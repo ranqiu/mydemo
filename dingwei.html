@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#btn{
+			height: 100px;
+			width: 100px;
+		}
+	</style>
+	
+</head>
+<body>
+<button id="location"></button>
+<script src="lib/jquery/jquery.js"></script>
+	<script>
+		    $('#location').on('click', function() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(geo_success,geo_error);
+            }
+            function geo_success(position) {
+                var lat = position.coords.latitude
+                var log = position.coords.longitude
+                console.log(lat,log)
+                location.href = 'location.html?lat=' + lat + '&log=' + log
+            }
+             function geo_error(err){
+                console.log(err);
+            }
+
+        })
+	</script>
+</body>
+</html>

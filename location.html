@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/location.css">
+</head>
+
+<body>
+    <header>
+        <div class="title clearfix">
+            <a href="index.html" class="fl"></a>
+            <p>附近影院</p>
+        </div>
+    </header>
+    <article>
+        <ul class="location" id="location">
+            <!-- <li>
+                <p class="city">当前城市</p>
+                <p class="cinemaname">影院名称</p>
+                <p class="address">地址</p>
+                <p class="telephone">电话</p>
+                <p class="trafficRoutes">交通路线</p>
+                <p class="distance">距离</p>
+            </li> -->
+        </ul>
+    </article>
+</body>
+<script src="lib/fixScreen.js"></script>
+<script src="lib/jquery/jquery.js"></script>
+<script src="js/location.js"></script>
+<script src="lib/template.js"></script>
+<script type='text/html' id="cinemaLocation">
+    {{each result as value}}
+    <li>
+        <p class="city">当前城市：{{value.cityName}}</p>
+        <p class="cinemaname">影院名称：{{value.cinemaName}}</p>
+        <p class="address">地址：{{value.address}}</p>
+        <p class="telephone">电话：{{value.telephone}}</p>
+        <p class="trafficRoutes">交通路线：{{value.trafficRoutes}}</p>
+        <p class="distance">距离：{{value.distance}}m</p>
+    </li>
+    {{/each}}
+</script>
+
+</html>

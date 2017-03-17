@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- 头部搜索 -->
+    <header>
+        <div class="search clearfix">
+            <div class="city fl">
+                <a class="citya" id="city">上海</a>
+            </div>
+            <input id="search" type="search" class="search_text fl" value='请输入关键字'>
+            <a class="location fr" id="location"></a>
+            <input type="button" class="search_btn fr" value="搜索" id="btn">
+        </div>
+    </header>
+    <article>
+        <p class="title">今日热映</p>
+        <ul class="hot_showing clearfix" id="hot_showing">
+            <li>
+                <a href="#">
+                    <img src="" alt="" class="movie_pic">
+                    <p class="movie_title">爱乐之城</p>
+                </a>
+            </li>
+        </ul>
+    </article>
+</body>
+<script src="lib/fixScreen.js"></script>
+<script src="lib/jquery/jquery.js"></script>
+<script src="js/index.js"></script>
+<script src="lib/template.js"></script>
+<script type='text/html' id="hotMovies">
+    {{each result as value}}
+    <li>
+        <a class="movie_id" movieid="{{value.movieId}}">
+            <img src="{{#value.pic_url}}" alt="" class="movie_pic">
+            <p class="movie_title">{{value.movieName}}</p>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+</html>

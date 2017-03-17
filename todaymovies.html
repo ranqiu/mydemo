@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>影院列表</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/todaymovies.css">
+</head>
+<header>
+    <div class="title clearfix">
+        <a href="index.html" class="fl"></a>
+        <p>影院列表</p>
+    </div>
+</header>
+<article>
+    <ul class="cinema clearfix" id="cinema">
+        <!--  <li>
+           <a href="#">
+               <p class="ciname_name">嘉禾</p>
+               <p class="movie_address">爱乐之城</p>
+           </a>
+       </li> -->
+    </ul>
+</article>
+
+<body>
+</body>
+<script src="lib/fixScreen.js"></script>
+<script src="lib/jquery/jquery.js"></script>
+<script src="js/todaymovies.js"></script>
+<script src="lib/template.js"></script>
+<script type='text/html' id="cinemaList">
+    {{each result as value}}
+    <li>
+        <a href="cinema.html?cinemaid={{value.cinemaId}}">
+            <p class="ciname_name">{{value.cinemaName}}</p>
+            <p class="movie_address">{{value.address}}</p>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+</html>

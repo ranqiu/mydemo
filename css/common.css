@@ -1,0 +1,98 @@
+/*reset css*/
+/*所有的标签和伪类*/
+*,
+::before,
+::after {
+    word-break: break-all;
+    margin: 0;
+    padding: 0;
+    /*清除点击高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+    /*设置所有盒子的宽度以边框开始计算*/
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 0.186667rem;
+    color: #333;
+    font-family: "MicroSoft YaHei", "sans-serif"; /*设备默认的字体*/
+}
+i,em{
+    font-style: normal;
+}
+b{
+    font-weight: normal;
+}
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #333;
+}
+
+input, textarea,button,img {
+    border: none;
+    outline: none;
+    resize: none;
+    /*特殊的属性定义 清除浏览器给input自带的样式*/
+    -webkit-appearance: none; /*组件默认的样式空*/
+}
+select{
+    border:none;
+    outline: none;
+}
+/*common css*/
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix::after,
+.clearfix::before {
+    content: "";
+    line-height: 0;
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+li{
+    box-sizing: border-box;
+}
+/*base css*/
+
+header>.title {
+    background-color: #ff841d;
+}
+
+header>.title>p {
+    height:1.2rem;
+    font-size: 0.6rem;
+    line-height: 1.2rem;
+    padding-left: 1.0rem;
+    text-align: center;
+    color: #fff;
+}
+
+header>.title>a {
+    width: 1.0rem;
+    height: 1.2rem;
+    background: url('../images/arrow.svg') left center no-repeat;
+    background-size: 0.6rem;
+}
+
+
+
+
+
+

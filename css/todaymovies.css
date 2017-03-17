@@ -1,0 +1,28 @@
+
+
+.cinema {
+    padding: 0 0.2rem;
+}
+
+.cinema>li {
+    margin: 0.2rem 0;
+    background: #fff;
+    background: #f5f5f5;
+    padding: 0.1rem;
+}
+
+.cinema>li>a {
+    display: inline-block;
+    width: 100%;
+}
+
+.ciname_name {
+    font-size: 0.4rem;
+    font-weight: 700;
+    line-height: 0.6rem;
+}
+
+.movie_address {
+    font-size: 0.35rem;
+    line-height: 0.5rem;
+}
